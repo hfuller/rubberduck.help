@@ -1,0 +1,10 @@
+#title {
+	font-size:2.8em;
+	word-spacing:40em; /* arbitrary large value to make every word wrap */
+}
+@media screen and (min-width: 64em) {
+	#title {
+		font-size:3.5em;
+	}
+}
+
