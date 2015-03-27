@@ -8,3 +8,23 @@
 	}
 }
 
+.chat-message {
+	/*
+	background-color:red;
+	border-color:yellow;
+	margin:3px;
+	*/
+	max-width:20em;
+	display:table; /* aka "don't be bigger than the stuff you contain" */
+}
+.chat-message.from-user {
+	text-align:right;
+	background-color:#eee;
+	margin-left:auto;
+}
+.chat-message.from-bot {
+	text-align:left;
+	background-color:#aaa;
+	margin-right:auto;
+}
+
