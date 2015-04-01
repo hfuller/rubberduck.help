@@ -1,30 +1,28 @@
 #title {
-	font-size:2.8em;
+	font-size:2em;
 	word-spacing:40em; /* arbitrary large value to make every word wrap */
 }
-@media screen and (min-width: 64em) {
-	#title {
-		font-size:3.5em;
-	}
-}
-
 .chat-message {
 	/*
 	background-color:red;
 	border-color:yellow;
 	margin:3px;
 	*/
-	max-width:20em;
+	/*max-width:20em;*/
 	display:table; /* aka "don't be bigger than the stuff you contain" */
 }
 .chat-message * {
-	top:-18px;
+	top:-4px;
+	max-width:135px;
 }
 
 .chat-message.from-user {
 	text-align:right;
 	/*background-color:#ddd;*/
 	margin-left:auto;
+}
+.chat-message.from-user * {
+	float:right;
 }
 .chat-message.from-user .right {
 	background-color:#ddd;
@@ -35,6 +33,9 @@
 	/*background-color:#FFD801;*/
 	margin-right:auto;
 }
+.chat-message.from-bot * {
+	float:left;
+}
 .chat-message.from-bot .left {
 	background-color:#ffd801;
 }
@@ -44,4 +45,23 @@
 	border:1px solid black;
 }
 */
+
+@media screen and (min-width: 35.5em) { /* we are a reasonably sized phone */
+	#title { font-size:2.5em; }
+	.chat-message * { max-width:400px; }
+}
+@media screen and (min-width: 380px) { /* tiny hack to make it not suck on my phone */
+	.chat-message * { max-width:240px; }
+}
+@media screen and (min-width: 48em) { /* we are a tablet */
+	#title { font-size:3.0em; }
+	.chat-message * { max-width:280px; }
+}
+@media screen and (min-width: 64em) { /* we are a laptop */
+	#title { font-size:3.5em; }
+	.chat-message * { max-width:350px; }
+	/* could be bigger but this way we don't
+	 * incroach on the opposite-side avatar. */
+}
+
 
