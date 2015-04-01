@@ -17,14 +17,31 @@
 	max-width:20em;
 	display:table; /* aka "don't be bigger than the stuff you contain" */
 }
+.chat-message * {
+	top:-18px;
+}
+
 .chat-message.from-user {
 	text-align:right;
-	background-color:#eee;
+	/*background-color:#ddd;*/
 	margin-left:auto;
 }
+.chat-message.from-user .right {
+	background-color:#ddd;
+}
+
 .chat-message.from-bot {
 	text-align:left;
-	background-color:#aaa;
+	/*background-color:#FFD801;*/
 	margin-right:auto;
 }
+.chat-message.from-bot .left {
+	background-color:#ffd801;
+}
+
+/*
+.avatar {
+	border:1px solid black;
+}
+*/
 

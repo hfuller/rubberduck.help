@@ -206,7 +206,7 @@ blockquote p {
   left:-25px; /* value = - border-left-width - border-right-width */
   bottom:auto;
   border-width:10px 25px 10px 0;
-  border-color:transparent #aaa;
+  border-color:transparent #FFD801;
 }
 
 /* Variant : right
@@ -218,7 +218,7 @@ blockquote p {
   bottom:auto;
   left:auto;
   border-width:10px 0 10px 25px;
-  border-color:transparent #eee;
+  border-color:transparent #ddd;
 }
 
 
